@@ -421,6 +421,10 @@ footer .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--vol
   .hero-text { order: 1; align-self: start; padding-bottom: var(--s-6); }
   .hero-portrait-col { order: 2; height: clamp(520px,70svh,760px); }
   .hero-portrait-wrap { max-width: 100%; }
+  /* On stacked (mobile/tablet) layouts the wide photo would shrink the subject
+     to a tiny figure. Switch to cover + framing on the subject so he fills the
+     frame at a proper size without overlapping anything. */
+  .hero-portrait { object-fit: cover; object-position: 45% bottom; }
   .work-grid { grid-template-columns: 1fr 1fr; }
   .stat-grid { grid-template-columns: 1fr 1fr; }
 }
