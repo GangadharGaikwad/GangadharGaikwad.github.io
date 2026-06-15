@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <!-- ============ Primary SEO ============ -->
+  <title>Gangadhar Gaikwad — AI &amp; Full-Stack Engineer</title>
+  <meta name="description" content="Gangadhar Gaikwad — final-year computer engineering student building real-time, AI-assisted products. Creator of CodeLM and AIMogger. Based in Maharashtra, India.">
+  <meta name="author" content="Gangadhar Gaikwad">
+  <meta name="keywords" content="Gangadhar Gaikwad, full-stack developer, AI engineer, CodeLM, AIMogger, React, Supabase, n8n, portfolio, Maharashtra, India">
+  <link rel="canonical" href="https://gangadhargaikwad.me/">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0A0A0C">
+
+  <!-- ============ Open Graph ============ -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Gangadhar Gaikwad">
+  <meta property="og:title" content="Gangadhar Gaikwad — AI &amp; Full-Stack Engineer">
+  <meta property="og:description" content="Final-year computer engineering student building real-time, AI-assisted products. Creator of CodeLM and AIMogger.">
+  <meta property="og:url" content="https://gangadhargaikwad.me/">
+  <meta property="og:image" content="https://gangadhargaikwad.me/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Gangadhar Gaikwad — AI & Full-Stack Engineer">
+
+  <!-- ============ Twitter ============ -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Gangadhar Gaikwad — AI &amp; Full-Stack Engineer">
+  <meta name="twitter:description" content="Final-year computer engineering student building real-time, AI-assisted products. Creator of CodeLM and AIMogger.">
+  <meta name="twitter:image" content="https://gangadhargaikwad.me/og-image.png">
+
+  <!-- ============ Icons / Manifest ============ -->
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- ============ Fonts (preconnect + display swap) ============ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;700&display=swap">
+
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- ============ Structured data (Person) ============ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Gangadhar Gaikwad",
+    "url": "https://gangadhargaikwad.me",
+    "image": "https://gangadhargaikwad.me/assets/gangadhar-profile.png",
+    "jobTitle": "AI & Full-Stack Engineer",
+    "email": "mailto:gangadhargaikwad186@gmail.com",
+    "telephone": "+91-9011608196",
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "Maharashtra",
+      "addressCountry": "IN"
+    },
+    "alumniOf": [
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "Government College of Engineering and Research, Avasari Khurd"
+      },
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "Government Polytechnic, Nashik"
+      }
+    ],
+    "knowsAbout": ["Full-Stack Development", "Artificial Intelligence", "React", "Supabase", "Automation", "n8n", "Real-time Systems"],
+    "sameAs": [
+      "https://github.com/GangadharGaikwad",
+      "https://www.linkedin.com/in/gangadhar-gaikwad-480a7a281",
+      "https://instagram.com/animenature_ig"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#work">skip to content</a>
+
+  <!-- ============ Shared liquid SVG filters ============ -->
+  <svg class="liquid-defs" aria-hidden="true" focusable="false">
+    <defs>
+      <filter id="hero-goo" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="22" result="b"></feGaussianBlur>
+        <feColorMatrix in="b" mode="matrix"
+          values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -10"></feColorMatrix>
+      </filter>
+      <filter id="hero-displace" x="-15%" y="-15%" width="130%" height="130%">
+        <feTurbulence id="hd-turb" type="fractalNoise"
+          baseFrequency="0.012 0.018" numOctaves="2" seed="3" result="n">
+          <animate attributeName="baseFrequency" dur="12s"
+            values="0.012 0.018; 0.018 0.012; 0.012 0.018"
+            repeatCount="indefinite"></animate>
+        </feTurbulence>
+        <feDisplacementMap id="hd-map" in="SourceGraphic" in2="n"
+          scale="0" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap>
+      </filter>
+    </defs>
+  </svg>
+
+  <!-- custom cursor disc (desktop only) -->
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+
+  <!-- ============ Floating nav ============ -->
+  <nav class="nav" aria-label="primary">
+    <a href="#about" data-nav="about">about</a>
+    <a href="#work" data-nav="work">work</a>
+    <a href="#stack" data-nav="stack">stack</a>
+    <a href="#wins" data-nav="wins">wins</a>
+    <a href="#contact" class="nav-cta"><span class="dot"></span> say hi ↗</a>
+  </nav>
+
+  <!-- ============ Side rails ============ -->
+  <aside class="rail" aria-hidden="true">
+    <span><span class="num" id="rail-num">01</span> · 06</span>
+    <div class="scroll-track"><div class="scroll-fill" id="scroll-fill"></div></div>
+    <span>SCROLL</span>
+  </aside>
+  <aside class="rail-right" aria-hidden="true">
+    <span>MAHARASHTRA, IN · <span id="rail-clock">--:--</span></span>
+    <span class="live">● OPEN TO WORK · JUL 2026</span>
+  </aside>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="hero-bg-glow" aria-hidden="true"><div class="g1"></div><div class="g2"></div></div>
+      <div class="hero-liquid" id="hero-liquid" aria-hidden="true">
+        <div class="hero-blob hb1"></div>
+        <div class="hero-blob hb2"></div>
+        <div class="hero-blob hb3"></div>
+        <div class="hero-blob hb4"></div>
+      </div>
+
+      <div class="hero-grid">
+        <div class="hero-text">
+          <div class="hero-eyebrow">
+            <span class="pulse"></span> MAHARASHTRA, IN · OPEN TO WORK
+          </div>
+          <h1 class="hero-name">
+            gangadhar<span class="dot">.</span><br>
+            gaikwad<span class="dot">.</span>
+          </h1>
+          <p class="hero-subline">
+            <span class="serif">designer</span> / engineer.<br>
+            computer engineering, final year.
+          </p>
+          <p class="hero-blurb">
+            currently building <em>CodeLM</em> — real-time, multiplayer AI
+            coding workspaces — and <em>AIMogger</em>, a genAI publishing
+            platform. graduating july 2026.
+          </p>
+          <div class="hero-ctas">
+            <a class="btn" href="#work">see the work <span aria-hidden="true">→</span></a>
+            <a class="btn ghost" href="#contact">say hi <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+
+        <div class="hero-portrait-col">
+          <div class="hero-portrait-wrap" id="portrait-wrap" data-cursor="melt">
+            <img class="hero-portrait" id="hero-portrait"
+                 src="/assets/gangadhar-profile.png"
+                 width="1672" height="941"
+                 alt="Gangadhar Gaikwad, side profile" draggable="false" fetchpriority="high">
+            <div class="hero-hint" aria-hidden="true"><span class="pulse"></span> HOVER ME</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-scroll" aria-hidden="true">scroll <span class="arrow">↓</span></div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section-pad">
+      <div class="section-eyebrow">§ 01 · ABOUT <span class="line"></span> THE PERSON</div>
+      <div class="about-grid">
+        <h2 class="about-h2">i build things,<br><span class="serif">mostly solo.</span></h2>
+        <div class="about-body">
+          <p>
+            hey — i'm gangadhar. final-year computer engineering at government
+            college of engineering &amp; research, avasari khurd. graduating
+            july 2026.
+          </p>
+          <p>
+            i design and code full-stack products end to end — usually with
+            <em>AI</em> somewhere in the loop. lately that's been real-time
+            collaboration, automation pipelines, and a research paper on
+            AI-augmented development, currently under review.
+          </p>
+          <p>
+            i also run <em>@animenature_ig</em> — a generative-AI instagram page
+            i grew from zero to 80k followers on my own content pipeline.
+          </p>
+
+          <div class="stack">
+            <span class="hot">design</span>
+            <span class="hot">full-stack</span>
+            <span>real-time</span>
+            <span>AI tooling</span>
+            <span>automation</span>
+            <span>maharashtra, in</span>
+          </div>
+
+          <div class="edu">
+            <div class="edu-row">
+              <div class="edu-deg">B.E. Computer Engineering</div>
+              <div class="edu-place">Govt. College of Engineering &amp; Research, Avasari Khurd</div>
+              <div class="edu-meta">expected jul 2026 · CGPA 7.6/10</div>
+            </div>
+            <div class="edu-row">
+              <div class="edu-deg">Diploma · Automobile Engineering</div>
+              <div class="edu-place">Government Polytechnic, Nashik</div>
+              <div class="edu-meta">jul 2023 · 87 percentile · 2nd rank</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WORK ============ -->
+    <section id="work" class="section-pad">
+      <div class="section-eyebrow">§ 02 · SELECTED WORK <span class="line"></span> 03 BUILDS · 2025</div>
+      <h2 class="about-h2 work-title">selected <span class="serif">work.</span></h2>
+
+      <div class="work-grid">
+        <!-- CodeLM — live link -->
+        <a class="work-card" href="https://codelm.vercel.app" target="_blank" rel="noopener noreferrer">
+          <div class="yr"><span>§ 01 · aug 2025 — now</span><span class="live">LIVE</span></div>
+          <h3>CodeLM. <span class="serif">real-time AI coding, together.</span></h3>
+          <p>
+            an AI-assisted collaborative coding platform — team workspaces, user
+            roles, chat, and LLM-assisted coding workflows. built on supabase
+            auth and database flows for users, teams, and project access.
+            academic capstone; research paper under review.
+          </p>
+          <div class="stack stack-card">
+            <span>React</span><span>Supabase</span><span>Postgres</span>
+            <span>REST APIs</span><span>JWT</span><span>LLM APIs</span>
+          </div>
+          <div class="card-foot"><span>capstone · codelm.vercel.app</span><span class="arr" aria-hidden="true">↗</span></div>
+        </a>
+
+        <!-- AIMogger — live link -->
+        <a class="work-card plasma" href="https://aimogger.com/" target="_blank" rel="noopener noreferrer">
+          <div class="yr"><span>§ 02 · nov 2025 — now</span><span class="live">LIVE</span></div>
+          <h3>AIMogger. <span class="serif">genAI blogs that publish themselves.</span></h3>
+          <p>
+            a genAI platform for blog generation, AI-tool discovery, and resource
+            curation. automation flows handle topic research, draft generation,
+            and structured publishing — wired with n8n, JWT auth, cloudinary
+            media, and supabase.
+          </p>
+          <div class="stack stack-card">
+            <span>React</span><span>Supabase</span><span>n8n</span>
+            <span>JWT</span><span>Cloudinary</span><span>LLM APIs</span>
+          </div>
+          <div class="card-foot"><span>solo · aimogger.com</span><span class="arr" aria-hidden="true">↗</span></div>
+        </a>
+
+        <!-- Privacy Parrot — CODTECH internship, no public URL -->
+        <article class="work-card">
+          <div class="yr"><span>§ 03 · jan — feb 2025</span><span class="intern">INTERNSHIP</span></div>
+          <h3>Privacy Parrot. <span class="serif">see who's watching you.</span></h3>
+          <p>
+            an AI-assisted web-privacy analysis prototype built during my codtech
+            internship — surfaces cookies, tracking scripts, and browser
+            permissions, then shows a site's privacy behaviour through a simple
+            interface. all analysis runs locally.
+          </p>
+          <div class="stack stack-card">
+            <span>JavaScript</span><span>browser APIs</span><span>privacy-first</span>
+          </div>
+          <div class="card-foot"><span>codtech it solutions · remote</span><span class="arr static" aria-hidden="true">·</span></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ STACK ============ -->
+    <section id="stack" class="section-pad skills">
+      <div class="section-eyebrow">§ 03 · THE STACK <span class="line"></span> 4 LANGS · 4 LIBS · 8 TOOLS</div>
+      <h2 class="about-h2 stack-title">the <span class="serif">stack.</span></h2>
+      <p class="stack-lead">not a wishlist. these are the tools behind the products above.</p>
+
+      <div class="marquees">
+        <div class="marquee-row">
+          <span class="marquee-label">core</span>
+          <div class="marquee"><div class="marquee-track" data-marquee>
+            <span class="marquee-chip">C++<span class="marquee-sep">·</span></span>
+            <span class="marquee-chip">Python<span class="marquee-sep">·</span></span>
+            <span class="marquee-chip">JavaScript<span class="marquee-sep">·</span></span>
+            <span class="marquee-chip">SQL<span class="marquee-sep">·</span></span>
+          </div></div>
+        </div>
+        <div class="marquee-row">
+          <span class="marquee-label">libraries &amp; apis</span>
+          <div class="marquee reverse accent"><div class="marquee-track" data-marquee>
+            <span class="marquee-chip">React<span class="marquee-sep">·</span></span>
+            <span class="marquee-chip">REST APIs<span class="marquee-sep">·</span></span>
+            <span class="marquee-chip">JWT Auth<span class="marquee-sep">·</span></span>
+            <span class="marquee-chip">n8n Workflows<span class="marquee-sep">·</span></span>
+          </div></div>
+        </div>
+        <div class="marquee-row">
+          <span class="marquee-label">dev &amp; cloud</span>
+          <div class="marquee"><div class="marquee-track" data-marquee>
+            <span class="marquee-chip">Git<span class="marquee-sep">·</span></span>
+            <span class="marquee-chip">GitHub<span class="marquee-sep">·</span></span>
+            <span class="marquee-chip">Supabase<span class="marquee-sep">·</span></span>
+            <span class="marquee-chip">Vercel<span class="marquee-sep">·</span></span>
+            <span class="marquee-chip">Cloudflare<span class="marquee-sep">·</span></span>
+            <span class="marquee-chip">Cloudinary<span class="marquee-sep">·</span></span>
+            <span class="marquee-chip">PostgreSQL<span class="marquee-sep">·</span></span>
+            <span class="marquee-chip">MySQL<span class="marquee-sep">·</span></span>
+          </div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WINS ============ -->
+    <section id="wins" class="section-pad">
+      <div class="section-eyebrow">§ 04 · WINS <span class="line"></span> THE RECEIPTS</div>
+      <h2 class="about-h2 wins-title">wins worth <span class="serif">keeping.</span></h2>
+
+      <div class="stat-grid">
+        <article class="stat-card plasma">
+          <div class="stat-big">80<span class="unit">K+</span></div>
+          <div class="stat-label">instagram audience</div>
+          <div class="stat-sub">@animenature_ig — grown from zero with a generative-AI content pipeline.</div>
+        </article>
+        <article class="stat-card">
+          <div class="stat-big">01</div>
+          <div class="stat-label">research paper · under review</div>
+          <div class="stat-sub">“Architectures for AI-Augmented Collaborative Development Environments.” co-authored.</div>
+        </article>
+        <article class="stat-card">
+          <div class="stat-big">7.6<span class="unit">/10</span></div>
+          <div class="stat-label">CGPA · B.E. computer eng.</div>
+          <div class="stat-sub">govt. college of engineering &amp; research, avasari · expected jul 2026.</div>
+        </article>
+        <article class="stat-card plasma">
+          <div class="stat-big">02<span class="unit">ND</span></div>
+          <div class="stat-label">rank · diploma final year</div>
+          <div class="stat-sub">govt. polytechnic nashik, automobile engineering · 87 percentile.</div>
+        </article>
+        <article class="stat-card">
+          <div class="stat-big">ISRO</div>
+          <div class="stat-label">IIRS geodata certification</div>
+          <div class="stat-sub">online training on geospatial data processing with python + ML.</div>
+        </article>
+        <article class="stat-card">
+          <div class="stat-big">AI</div>
+          <div class="stat-label">google · introduction to AI</div>
+          <div class="stat-sub">course certificate via coursera · completed 2026.</div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="contact">
+      <div class="section-eyebrow contact-eyebrow">
+        <span class="line short"></span> § 05 · SAY HI <span class="line short"></span>
+      </div>
+      <div class="big">say <span class="serif">hi.</span><br>i reply quickly.</div>
+      <div class="contact-meta">maharashtra, india · +91 90116 08196 · open to work from jul 2026</div>
+
+      <div class="links">
+        <a class="big-link" href="mailto:gangadhargaikwad186@gmail.com">gangadhargaikwad186@gmail.com <span aria-hidden="true">↗</span></a>
+        <a class="big-link" href="https://github.com/GangadharGaikwad" target="_blank" rel="noopener noreferrer">github.com/GangadharGaikwad <span aria-hidden="true">↗</span></a>
+        <a class="big-link" href="https://www.linkedin.com/in/gangadhar-gaikwad-480a7a281" target="_blank" rel="noopener noreferrer">linkedin · gangadhar gaikwad <span aria-hidden="true">↗</span></a>
+        <a class="big-link" href="https://instagram.com/animenature_ig" target="_blank" rel="noopener noreferrer">@animenature_ig · 80k followers <span aria-hidden="true">↗</span></a>
+      </div>
+
+      <a class="btn ghost resume-btn" href="/Gangadhar-Gaikwad-Resume.pdf" target="_blank" rel="noopener">download résumé <span aria-hidden="true">↓</span></a>
+    </section>
+  </main>
+
+  <footer>
+    <div>© gangadhar gaikwad · 2026</div>
+    <div class="right">
+      <span class="mono">built liquid · deployed on github pages</span>
+      <span><span class="dot"></span> ↺ refresh to disturb the liquid</span>
+    </div>
+  </footer>
+
+  <script src="/script.js" defer></script>
+</body>
+</html>

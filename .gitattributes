@@ -1,0 +1,12 @@
+# Normalize line endings to LF in the repo (keeps the Linux CI runner happy)
+* text=auto eol=lf
+
+# Treat these as binary — never touch their bytes
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.woff binary
+*.woff2 binary

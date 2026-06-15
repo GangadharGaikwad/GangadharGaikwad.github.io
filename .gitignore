@@ -1,0 +1,71 @@
+# ─────────────────────────────────────────────────────────
+# Confidential / secrets — never commit these
+# ─────────────────────────────────────────────────────────
+.env
+.env.*
+*.local
+*.key
+*.pem
+*.p12
+*.pfx
+*.crt
+*.cert
+id_rsa*
+id_ed25519*
+*.keystore
+secrets.*
+.secrets/
+credentials*.json
+**/serviceAccount*.json
+.npmrc
+.netrc
+.aws/
+.ssh/
+
+# ─────────────────────────────────────────────────────────
+# OS / editor cruft
+# ─────────────────────────────────────────────────────────
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+desktop.ini
+.thumbnail
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ─────────────────────────────────────────────────────────
+# Tooling / build / test scratch
+# ─────────────────────────────────────────────────────────
+node_modules/
+dist/
+build/
+.cache/
+*.log
+npm-debug.log*
+yarn-error.log*
+.playwright-mcp/
+playwright-report/
+test-results/
+
+# ─────────────────────────────────────────────────────────
+# Local scratch images / screenshots (regenerate on demand)
+# ─────────────────────────────────────────────────────────
+/desktop-*.png
+/mobile-*.png
+/tablet-*.png
+/og-render.png
+/icon-render.png
+*.screenshot.png
+uploads/pasted-*.png
+
+# ─────────────────────────────────────────────────────────
+# Design-system generator artifacts (not needed to deploy)
+# ─────────────────────────────────────────────────────────
+_ds_bundle.js
+_ds_manifest.json
+_adherence.oxlintrc.json
